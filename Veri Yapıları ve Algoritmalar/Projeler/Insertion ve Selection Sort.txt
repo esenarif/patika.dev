@@ -22,8 +22,6 @@ ________________________________________________________________________________
 Soru 1:
 a)
 
-22'den öncesi sıralı kabul edildiği için -varsa- direkt olarak başlayabiliriz sırala yapmaya.  /////
-
 Adım 1:
 22, 27'den zaten küçük olduğu için bu hali ile kalacak.
 
