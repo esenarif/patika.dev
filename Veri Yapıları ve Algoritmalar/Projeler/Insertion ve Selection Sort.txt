@@ -1,0 +1,94 @@
+Soru 1:
+
+[22,27,16,2,18,6] -> Insertion Sort
+
+a) Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+b) Big-O gösterimini yazınız.
+
+c) Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız.
+
+Average case: Aradığımız sayının ortada olması
+Worst case: Aradığımız sayının sonda olması
+Best case: Aradığımız sayının dizinin en başında olması.
+--------------------------------------------------------------------------------------------------------------------------------
+Soru 2:
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+________________________________________________________________________________________________________________________________
+
+[22,27,16,2,18,6]
+
+a)
+
+22'den öncesi sıralı kabul edildiği için -varsa- direkt olarak başlayabiliriz sırala yapmaya.  /////
+
+Adım 1:
+22, 27'den zaten küçük olduğu için bu hali ile kalacak.
+
+Adım 2:
+27, 16'dan büyük, 16 bir sola geçecek.
+[22,16,27,2,18,6]
+
+22, 16'dan büyük, 16 bir sola daha geçecek.
+[16,22,27,2,18,6] 
+Şu aşamada, dizimiz 4. elemana kadar sıralı durumda. 
+
+Adım 3:
+Algoritmamız, sıralamasını yapmaya kaldığı yerden devam edecek. 2, kendinden önceki elemanlardan küçük olduğu için adım adım birinci sıraya geçecek.
+
+[16,22,2,27,18,6] 
+[16,2,22,27,18,6] 
+[2,16,22,27,18,6] 
+
+Adım 4:
+Şu anda dizimiz 5. elemana kadar sıralı durumda. Algoritma, sıralamasına yine aynı kuralları takip ederek devam edecek. 18, kendinden küçük bir sayı görene kadar sola kayacak.
+[2,16,22,27,18,6]  
+[2,16,22,18,27,6]
+[2,16,18,22,27,6]  
+
+Dizimiz, son elemana kadar yine sıralanmış durumda. Algoritma yine aynı şekilde ilerlemeye devam edecek. Şimdi sıra 6'da.
+[2,16,18,22,6,27]
+[2,16,18,6,22,27]
+[2,16,6,18,22,27]
+[2,6,16,18,22,27]
+
+Ve sıralama işlemi burada sona erer. Dizimizin sıralanmış hali [2,6,16,18,22,27] şeklinde olacaktır.
+
+b)
+Big-O Notation: O(n^2)
+
+c)
+Aranılan sayı (18), sıralama sonrasında elde ettiğimiz dizide tam ortada olduğu için average case kapsamındadır.
+
+
+
+Soru 2:
+
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre sıralamasını yapmamız isteniyor.
+
+Adım 1:
+Dizideki en küçük sayı bulunarak sıralama işlemine başlanacak. En küçük sayı ile baştaki sayının yeri değiştirilerek işleme devam edilecek.
+  
+[2,3,5,8,7,9,4,15,6]
+
+Adım 2: 
+Daha sonra, ikinci en küçük sayı hangisi ise 2. eleman ile o sayının yeri değişecek. Bu, dizimizde ilk adımdan sonra halihazırda gerçekleştiği için 3'ten sonra en büyük sayı aranıp, sonrasında üçüncü eleman ile yer değiştirecek.
+
+[2,3,4,8,7,9,5,15,6]
+
+Adım 3: 
+Algoritma, aynı kurala uyarak sıralama yapmaya devam edecek.
+
+[2,3,4,5,7,9,8,15,6]
+
+Adım 4:
+[2,3,4,5,6,9,8,15,7] //Soruda asıl istenen kısım
+
+Adım 5:
+[2,3,4,5,6,7,8,15,9]
+
+Adım 6:
+[2,3,4,5,6,7,8,9,15]
+
+Ve Selection Sort işlemi burada sonra erer. Dizimizin sıralanmış hali [2,3,4,5,6,7,8,9,15] şeklinde olacaktır.
