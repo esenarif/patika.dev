@@ -1,0 +1,42 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+_______________________________________________________________________________________________________________________________
+
+Adım 1:
+Verilen diziyi binary search tree haline getirelim.
+7, kök elemanımızdır. 7'den küçük olan elemanları 7'nin soluna, 7'den büyük olan elemanları 7'nin sağına yazalım.
+
+5, 7'den küçük olduğu için sola yazıldı. Dizide 7'den büyük en küçük sayı 8 olduğu için de 8, 7'nin sağına yazıldı.
+
+            7
+           / \
+          5   8
+
+Adım 2:
+1, hem 7'den hem de 5'ten küçük olduğu için 5'in soluna yazıldı. 8'i yukarıdaki adımda yazdığımız için 3 ile devam ediyoruz. 
+
+3 ise, 7'den ve 5'ten küçük ama 1'den büyük olduğu için 1'in sağına yazıldı.
+
+6, 7'den küçük, 5'ten büyük olduğu için 5'in sağına yazıldı.
+
+            7
+           / \
+          5   8
+         /\   
+        1  6  
+       /\
+         3
+
+Adım 4: 
+Dizinin kalan elemanları da aynı mantıkla yerlerine yazıldı. Sıralama sonunda aşağıdaki görüntü elde edilmiş oldu.
+
+
+            7
+           / \
+          5   8
+         /\   /\
+        1  6    9
+       /\
+      0  3
+         /\
+        2  4
