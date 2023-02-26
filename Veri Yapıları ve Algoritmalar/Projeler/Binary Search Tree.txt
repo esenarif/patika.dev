@@ -27,7 +27,7 @@ Adım 2:
        /\
          3
 
-Adım 4: 
+Adım 3: 
 Dizinin kalan elemanları da aynı mantıkla yerlerine yazıldı. Sıralama sonunda aşağıdaki görüntü elde edilmiş oldu.
 
 
